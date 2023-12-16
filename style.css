@@ -1,0 +1,149 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+body 
+{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background: url("kiss of death.webp");
+    height: 100vh;
+}
+
+.container
+{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.div
+{
+    display: flex;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li
+{
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0;
+}
+
+.box
+{
+    margin: .5px;
+    width: 65px;
+    height: 65px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9 );
+}
+
+h1
+{
+    margin: 20px;
+    font-size:2.5rem;
+    text-align: center;
+    color: black;
+    border:2px solid black;
+    padding:10px;
+    background-color:gray;
+    border-radius: 5px;
+}
+
+#tog
+{
+    margin: 40px 0px;
+    font-size:1.5rem;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#reset-btn
+{
+    background-color: #4CAF;
+    border: none;
+    color:white;
+    padding:0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+
+}
+
+.all-img
+{
+    width:0ox;
+    position: relative;
+    bottom: 0px;
+}
+
+.all-pawns
+{
+    transform: scale(.7);
+}
+
+.authcont
+{
+    width: 0vw;
+}
+
+.author
+{
+    float: right;
+    margin-right: 0px;
+}
+
+@media (max-width: 500px){
+
+    .box
+{
+   
+    width: 11vw;
+    height: 11vw;
+
+
+}
+    .all-img {
+        width: 11vw;
+
+    }
+    #tog {
+        margin: 30px 0px;
+        font-size: 20px;
+    }
+    #reset-btn{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 300px){
+
+    h1{
+        font-size: 0px;
+
+    }
+    #tog{
+        margin:15px 0px;
+        font-size: 0px;
+    }
+
+}
